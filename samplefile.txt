@@ -1,2 +1,5 @@
 This is a file that we are going to perfom
 file operations on python by doing all the basics
+
+
+ this is line add by using write method in python

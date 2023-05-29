@@ -8,6 +8,13 @@ class account:# declaration of a class
     def deposit(self, amount):
         self.accbalance = self.accbalance + amount
         return self.accbalance
+    def withdraw(self,amount):
+        if amount > self.accbalance:
+            return "insufficient funds cannot withdraw"
+        else:
+            self.accbalance -= amount
+            return self.accbalance
 customer1 = account(101,"collins")
 print("The intial balance:",customer1.balance())
 print("brings the updated balance:",customer1.deposit(5000))
+print("balance after withdraw:",customer1.withdraw(6000))
